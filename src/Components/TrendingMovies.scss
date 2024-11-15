@@ -1,0 +1,14 @@
+.trending-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  background-color: #141414; /* Dark background */
+}
+
+.all-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,60 @@
+.search-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .search-input {
+    padding: 0.5rem 1rem;
+    width: 250px;
+    border: 2px solid transparent;
+    border-radius: 25px; // Rounded corners
+    outline: none; // Remove default outline
+    font-size: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.1
+    ); // Slightly transparent background
+    color: white; // Text color
+
+    &:focus {
+      border: 2px solid #61dafb; // Change border color on focus
+      box-shadow: 0 0 5px rgba(97, 218, 251, 0.5); // Add shadow effect on focus
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2); // Change background on hover
+    }
+  }
+
+  .suggestions-dropdown {
+    position: absolute;
+    top: 100%;
+    left: -110px;
+    width: 400px;
+    max-height: 200px;
+    background-color: black;
+    border-radius: 5px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    z-index: 50;
+
+    .suggestion-item {
+      padding: 10px;
+      cursor: pointer;
+      color: darkgoldenrod;
+
+      &:hover {
+        background-color: #61dafb;
+        color: black;
+      }
+    }
+    .highlighted {
+      background-color: #61dafb; // Highlighted background
+      color: black; // Change text color for highlighted item
+    }
+  }
+}

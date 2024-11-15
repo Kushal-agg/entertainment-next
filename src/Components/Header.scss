@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; // Ensure even spacing
+  background-color: black;
+  color: white;
+  position: relative;
+  height: 80px;
+  padding: 1rem;
+  box-sizing: border-box;
+  #home {
+    height: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+
+    width: 100%;
+    margin-left: 4vmax;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      outline: none;
+      border: 7px solid transparent;
+      border-radius: 12px;
+      font-size: 20px;
+      transition: color 0.3s, box-shadow 0.3s; /* Add transition for box-shadow */
+      margin: 2vmax;
+      font-size: 1.3rem;
+      font-weight: 300;
+
+      &.active {
+        color: burlywood; /* Highlight color for the active link */
+        font-weight: bold;
+        box-shadow: 2px 4px 8px red; /* Box shadow for active link */
+      }
+
+      &:hover {
+        color: burlywood; /* Color change on hover */
+        box-shadow: 2px 4px 8px blue; /* Box shadow on hover */
+      }
+    }
+  }
+  .search {
+    margin-left: auto; /* Pushes search bar to the end */
+    margin-right: 35px;
+    position: relative;
+    width: 300px; /* Adjust width as per your design */
+  }
+}
